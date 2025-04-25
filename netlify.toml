@@ -1,6 +1,6 @@
 [build]
-  command = "ng build --configuration production --base-href /"
-  publish = "dist/natural-cycles-countdown/browser"
+  command = "ng build --configuration production"
+  publish = "dist/natural-cycles-countdown/"
 
 [[redirects]]
   from = "/*"
