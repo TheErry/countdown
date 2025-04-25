@@ -7,4 +7,6 @@ import { CountdownComponent } from './countdown/countdown.component'
   standalone: true,
   template: `<app-countdown />`,
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'natural-cycles-countdown'
+}

@@ -40,4 +40,12 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Live site
 
-See the site live here: [(Countdown](https://errys-countdown.netlify.app/)
+See the site live here: [Countdown](https://errys-countdown.netlify.app/)
+
+
+## To be improved
+
+The first thing that could (and should) be improved is error handling and concrete unit tests for Countdown, AutoFontSize and LocalStorage, as well as better accessability. A support for changing languages would also be nice if it's going to be used by user globally. Right now it also doesn't have any backend, it's just using localStorage instead of saving data on a server or using API. 
+This app is small now so I felt like I have to use a service, but an improvment, especially if it would be used in prod, is to add a service for countdown-logic (and localStorage if it's still needed) to make it reusable as well as easier to test and more prepared for backend. Pipes could also be used for example for the timer, it would once again make it easier to test and format. 
+A small this is that the switch of containers with hasData and !hasData is not very smooth, and should probably have a better solution to make it look prettier.
+I'd like to add an even for when the time runs out and perhaps a reset-button.

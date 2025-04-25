@@ -22,6 +22,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
   ngOnInit() {
     const savedName = localStorage.getItem('eventName')
     const savedDate = localStorage.getItem('eventDate')
+
     if (savedName) this.eventName = savedName
     if (savedDate) {
       this.eventDate = savedDate
@@ -34,9 +35,10 @@ export class CountdownComponent implements OnInit, OnDestroy {
   }
 
   onChange() {
-    if (this.eventName && this.eventDate) {
-      localStorage.setItem('eventName', this.eventName)
-      localStorage.setItem('eventDate', this.eventDate)
+    localStorage.setItem('eventName', this.eventName)
+    localStorage.setItem('eventDate', this.eventDate)
+
+    if (this.hasData) {
       this.startCountdown()
     }
   }
@@ -48,8 +50,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
     targetDate.setHours(0, 0, 0, 0)
 
     const update = () => {
-      const now = Date.now()
-      const dist = targetDate.getTime() - now
+      const dist = targetDate.getTime() - Date.now()
 
       if (dist <= 0) {
         this.countdownText = '0 days, 0 h, 0 m, 0 s'

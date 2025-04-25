@@ -1,15 +1,17 @@
 @font-face {
   font-family: 'Open Sauce One';
-  src: url('/assets/fonts/open-sauce-one-latin-400-normal.woff2') format('woff2'),
-       url('/assets/fonts/open-sauce-one-latin-400-normal.woff') format('woff');
+  src: url('/assets/fonts/open-sauce-one-latin-400-normal.woff2')
+      format('woff2'),
+    url('/assets/fonts/open-sauce-one-latin-400-normal.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sauce One';
-  src: url('/assets/fonts/open-sauce-one-latin-800-normal.woff2') format('woff2'),
-  url('/assets/fonts/open-sauce-one-latin-800-normal.woff2') format('woff');
+  src: url('/assets/fonts/open-sauce-one-latin-800-normal.woff2')
+      format('woff2'),
+    url('/assets/fonts/open-sauce-one-latin-800-normal.woff2') format('woff');
   font-weight: 800;
   font-style: normal;
 }
@@ -24,6 +26,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f5f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sauce One', sans-serif;
+  box-sizing: border-box;
+  padding: 24px;
+  gap: 24px;
 }
 
 .text-wrapper {
@@ -49,20 +65,6 @@ main {
 
 .date-text {
   font-weight: 400;
-}
-
-.app-container {
-  width: 100vw;
-  min-height: 100vh;
-  background: #f5f3f3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Open Sauce One', sans-serif;
-  box-sizing: border-box;
-  padding: 24px;
-  gap: 24px;
 }
 
 .inputs {
