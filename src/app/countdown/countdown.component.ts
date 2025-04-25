@@ -15,6 +15,10 @@ export class CountdownComponent implements OnInit, OnDestroy {
   countdownText = ''
   private intervalId: any
 
+  get hasData(): boolean {
+    return !!this.eventName && !!this.eventDate
+  }
+
   ngOnInit() {
     const savedName = localStorage.getItem('eventName')
     const savedDate = localStorage.getItem('eventDate')

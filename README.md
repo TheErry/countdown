@@ -40,4 +40,4 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Live site
 
-See the site live here: (on it's way)
+See the site live here: [(Countdown](https://errys-countdown.netlify.app/)
